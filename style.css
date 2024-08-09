@@ -297,6 +297,7 @@ header {
     align-items: center;
     background-color: #222222;
     padding: 30px;
+    border: 1px solid #E6533C;
 }
 
 .run-section-heading{
@@ -352,5 +353,104 @@ header {
 
     .run-section-image{
         margin-top: 30px;
+    }
+}
+
+
+/* meet our team */
+
+.team-section-contents{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-color: #222222;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.team-section-content{
+    height: 20rem;
+}
+
+.team-section-content>img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 18px;
+}
+
+.trainer{
+    margin-top: -60px;
+    margin-left: 15px;
+    z-index: 100;
+}
+
+.trainer>h3{
+    margin: 0;
+}
+
+@media screen and (max-width : 576px) {
+    .team-section-contents{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+}
+
+/* footer */
+footer{
+    background-color: #222222;
+    margin-top: 100px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 0;
+}
+
+.footer-text{
+    width: 40%;
+}
+
+.footer-text>h1{
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #E6533C;   
+}
+
+.footer-link>h2{
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.footer-link>ul{
+    padding: 0;
+}
+
+.footer-link>ul>li{
+    margin-bottom: 10px ;
+}
+
+.footer-link>ul>li>a{
+    color: rgb(255, 255, 255, 0.5);
+}
+
+.all-right{
+    padding: 36px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+
+.all-right>a{
+    color: rgb(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width : 576px) {
+    .footer-content{
+        flex-direction: column;
+        padding: 35px 0       ;
+    }
+    .footer-text{
+        width: 100%;
     }
 }
